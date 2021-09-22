@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">SignUpForm</string>
+
     <string name="greeting">Register Account</string>
     <string name="hintUsername">Input Username</string>
     <string name="hintEmail">Input E-mail Address</string>
     <string name="hintPassword1">Input Password</string>
     <string name="hintPassword2">Confirm Password</string>
+    <string name="button1">Register</string>
+    <string name="button2">Log In</string>
 </resources>
