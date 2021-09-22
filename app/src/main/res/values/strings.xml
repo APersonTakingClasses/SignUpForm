@@ -12,6 +12,7 @@
     <string name="enterItems">Enter Log In Information</string>
     <string name="errorMessage1">Error: </string>
     <string name="errorMessage2"> does not match</string>
+    <string name="confirmation">Welcome!</string>
     <string name="username">Username</string>
     <string name="email">E-mail Address</string>
     <string name="password1">Password</string>
