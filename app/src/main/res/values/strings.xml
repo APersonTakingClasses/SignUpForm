@@ -8,4 +8,12 @@
     <string name="hintPassword2">Confirm Password</string>
     <string name="button1">Register</string>
     <string name="button2">Log In</string>
+
+    <string name="enterItems">Enter Log In Information</string>
+    <string name="errorMessage1">Error: </string>
+    <string name="errorMessage2"> does not match</string>
+    <string name="username">Username</string>
+    <string name="email">E-mail Address</string>
+    <string name="password1">Password</string>
+    <string name="password2">Confirmation Password</string>
 </resources>
