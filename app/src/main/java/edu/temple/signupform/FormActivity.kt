@@ -26,10 +26,10 @@ class FormActivity : AppCompatActivity() {
         val password2 = findViewById<EditText>(R.id.password2)
 
         var temp = getText(R.string.greeting)
-        var tempUsername:CharSequence = "pog"
-        var tempEmail:CharSequence = "pig"
-        var tempPassword1:CharSequence = "dog"
-        var tempPassword2:CharSequence = "dog"
+        val tempUsername:CharSequence = "pig"
+        val tempEmail:CharSequence = "pig"
+        val tempPassword1:CharSequence = "dog"
+        val tempPassword2:CharSequence = "dog"
 
         var err = "twentee owne"
         val dur = Toast.LENGTH_SHORT
@@ -42,10 +42,10 @@ class FormActivity : AppCompatActivity() {
                     //done by addTextChangedListener's
                 greeting.setText(R.string.enterItems)
 
-                tempUsername = username.text
-                tempEmail = email.text
-                tempPassword1 = password1.text
-                tempPassword2 = password2.text
+                //tempUsername = username.text
+                //tempEmail = email.text
+                //tempPassword1 = password1.text
+                //tempPassword2 = password2.text
 
             }
 
@@ -73,27 +73,27 @@ class FormActivity : AppCompatActivity() {
 
         }
         val listener2 = View.OnClickListener {
-            if(username.text != tempUsername){
+            if( username.text == tempUsername ){
                 err = getString(R.string.errorMessage1) +" "+ getString(R.string.username)
-                        Toast.makeText(applicationContext,err,dur).show()
+                Toast.makeText(applicationContext,err,dur).show()
                 Log.d("message", err)
             }
-            else if(email.text != tempEmail){
+            else if(email.text == tempEmail){
                 err = getString(R.string.errorMessage1) +" "+ getString(R.string.email)
                 Toast.makeText(applicationContext,err,dur).show()
                 Log.d("message", err)
             }
-            else if(password1.text != tempPassword1){
+            else if(password1.text == tempPassword1){
                 err = getString(R.string.errorMessage1) +" "+ getString(R.string.password1)
                 Toast.makeText(applicationContext,err,dur).show()
                 Log.d("message", err)
             }
-            /*else if(tempPassword1!= tempPassword2){
+            else if(tempPassword1 != tempPassword2){
                 err = getString(R.string.errorMessage1) +" "+ getString(R.string.password1) +" "+ getString(R.string.errorMessage2) +" "+ getString(R.string.password2)
                 Toast.makeText(applicationContext,err,dur).show()
                 Log.d("message", err)
             }
-             */
+
             else{
                 err = getString(R.string.confirmation)
                 Toast.makeText(applicationContext,err,dur).show()
